@@ -9,6 +9,7 @@
     --primary-black-color: #000000;
     --header-border-color: #ECECEC;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --footer-bg-link: rgba(255, 255, 255, 0.1);
     --hero--button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,6 +19,9 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
     --gradient-color: rgba(47, 48, 58, 0.4);
     --hero-bg-color: #C4C4C4;
+    --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -181,15 +185,24 @@ img {
     background-color: var(--bg-color);
 }
 
+.wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-section {
+    margin-right: 70px;
+}
+
 #contacts {
     margin-top: 20px;
 }
 
-.footer-list {
+.footer-contact {
     margin-bottom: 9px;
 }
 
-.footer-list:last-child {
+.footer-contact:last-child {
     margin-bottom: 0;
 }
 
@@ -204,6 +217,60 @@ img {
     font-style: normal;
 
     color: var(--footer-contact-color);
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    margin-right: 10px;
+}
+
+.footer-item:last-child {
+    margin-right: 0;
+}
+
+.footer-link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-bg-link);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-link.instagram {
+    background-image: url(../images/instagram-footer.svg);
+}
+
+.footer-link.twitter {
+    background-image: url(../images/twitter-footer.svg);
+}
+
+.footer-link.facebook {
+    background-image: url(../images/facebook-footer.svg);
+}
+
+.footer-link.linkedin {
+    background-image: url(../images/linkedin-footer.svg);
 }
 
 /* Hero стилі */
@@ -424,6 +491,10 @@ img {
 .portfolio-card {
     flex-basis: calc((100% / 3) - 60px);
     background-color: var(--primary-white-color);
+}
+
+.portfolio-card:hover {
+    box-shadow: var(--portfolio-card-shadow);
 }
 
 .portfolio-content {
