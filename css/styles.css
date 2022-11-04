@@ -289,7 +289,7 @@ img {
     content: '';
     height: 120px;
 
-    background-size: contain;
+    background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--section-bg-color);
