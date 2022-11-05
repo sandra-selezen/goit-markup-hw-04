@@ -22,6 +22,7 @@
     --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -432,13 +433,49 @@ img {
 }
 
 .team-position {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
 
     color: var(--text-color);
+}
+
+.social-list {
+    margin-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: var(--icon-color);
+    outline: 1px solid red;
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.social-icon {
+    fill: inherit;
 }
 
 /* Портфоліо стилі */
