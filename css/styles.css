@@ -133,6 +133,11 @@ img {
     margin-right: 50px;
 }
 
+.header-contact-item {
+    align-items: center;
+    outline: 1px solid red;
+}
+
 .nav-link-item:last-child,
 .header-contact-item:last-child {
     margin-right: 0;
@@ -146,6 +151,7 @@ img {
 
 .header-link {
     display: block;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -163,21 +169,25 @@ img {
 .header-phone {
     padding-top: 32px;
     padding-bottom: 32px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--text-color);
-
+    fill: var(--text-color);
     text-decoration: none;
 }
 
 .current,
 .hover-focus:hover,
 .hover-focus:focus {
+    fill: var(--accent-color);
     color: var(--accent-color);
+}
+
+.header-icon {
+    margin-right: 10px;
 }
 
 .footer {
@@ -243,14 +253,14 @@ img {
 }
 
 .footer-link {
-    display: inline-block;
+    display: flex;
     height: 44px;
     width: 44px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    fill: var(--primary-white-color);
     background-color: var(--footer-bg-link);
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .footer-link:hover,
@@ -258,20 +268,8 @@ img {
     background-color: var(--accent-color);
 }
 
-.footer-link.instagram {
-    background-image: url(../images/instagram-footer.svg);
-}
-
-.footer-link.twitter {
-    background-image: url(../images/twitter-footer.svg);
-}
-
-.footer-link.facebook {
-    background-image: url(../images/facebook-footer.svg);
-}
-
-.footer-link.linkedin {
-    background-image: url(../images/linkedin-footer.svg);
+.footer-icon {
+    fill: inherit;
 }
 
 /* Hero стилі */
@@ -349,35 +347,6 @@ img {
 
 .features-card {
     flex-basis: calc((100% - 90px) / 4);
-}
-
-.features-card::before {
-    margin-bottom: 30px;
-    display: block;
-    content: '';
-    height: 120px;
-
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--section-bg-color);
-    border-radius: 4px;
-}
-
-.features-card.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.features-card.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
-
-.features-card.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.features-card.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
 }
 
 .work-list {
@@ -463,9 +432,9 @@ img {
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
     fill: var(--icon-color);
-    outline: 1px solid red;
 }
 
 .social-link:hover,
@@ -475,6 +444,39 @@ img {
 }
 
 .social-icon {
+    fill: inherit;
+}
+
+.client-list {
+    display: flex;
+}
+
+.client-item {
+    margin-right: 30px;
+}
+
+.client-item:last-child {
+    margin-right: 0;
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.client-icon {
     fill: inherit;
 }
 
