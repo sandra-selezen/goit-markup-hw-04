@@ -164,6 +164,12 @@ img {
     text-decoration: none;
 }
 
+.current,
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
 .header-email,
 .header-phone {
     padding-top: 32px;
@@ -178,9 +184,10 @@ img {
     text-decoration: none;
 }
 
-.current,
-.hover-focus:hover,
-.hover-focus:focus {
+.header-email:hover,
+.header-email:focus,
+.header-phone:hover,
+.header-phone:focus {
     fill: var(--accent-color);
     color: var(--accent-color);
 }
