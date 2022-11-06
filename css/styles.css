@@ -172,6 +172,9 @@ img {
 
 .header-email,
 .header-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
