@@ -133,10 +133,6 @@ img {
     margin-right: 50px;
 }
 
-.header-contact-item {
-    outline: 1px solid red;
-}
-
 .nav-link-item:last-child,
 .header-contact-item:last-child {
     margin-right: 0;
